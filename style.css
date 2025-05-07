@@ -1,0 +1,277 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: bisque;
+            color: rgb(39, 5, 21);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .logo{
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 50px;
+            background-color: pink;
+             
+        }
+
+        #nav {
+            position:sticky;
+            top:0px;
+        }
+
+
+
+        nav ul {
+            display: flex; 
+                   
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(107, 35, 71);
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: purple;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        #element {
+            color: darkred;
+        }
+        .rightSection img {
+            width: 50%;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 0;
+        }
+
+        .intro .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .intro .leftSection .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            background: rgb(121, 59, 90);
+            color: aliceblue;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .skills {
+            padding: 50px 0;
+        }
+
+        .skills h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skills h4{
+            color:firebrick;
+        }
+
+        .skills-list-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list-3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list-4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list-1 div {
+            background: rosybrown;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .skills-list-2 div {
+            background: rosybrown;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .skills-list-3 div {
+            background: rosybrown;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .skills-list-4 div {
+            background: rosybrown;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .projects {
+            padding: 50px 0;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project-card {
+            background: lightcoral;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:bisque;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+          }
+          
+          .modal-content {
+            background: lightcoral;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+          }
+          
+          .close-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+          }
+          
+          .hidden {
+            display: none;
+          }
+          
+          /* Modal Buttons */
+#githubBtn,
+#liveServerBtn {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  background-color:beige; /* Indigo blue */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#liveServerBtn {
+  background-color:beige; 
+}
+
+#githubBtn:hover,
+#liveServerBtn:hover {
+  background-color: bisque;
+  transform: scale(1.05);
+}
+
+/* Optional: Make the modal content centered and styled */
+.modal-content {
+  padding: 20px;
+  background-color: lightcoral;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+
+        .contact {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 20px 0;
+        }

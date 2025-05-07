@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio - Vishalakshi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="logo">Vishalakshi's Portfolio</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="intro">
+      <div class="leftSection">
+        <p>Hi, My Name is <span class="purple">Vishalakshi</span></p>
+        <p>and I am a passionate <span id="element"></span></p>
+        <div class="buttons">
+            <a href="https://github.com/Vishalakshi-9" target="blank">
+            <button class="btn">Visit GitHub </button></a>
+            <a href="Full-stack-resume.pdf" download>
+              <button class="btn">Download Resume</button>
+            </a>
+          </div>
+          
+      </div>
+      <div class="rightSection">
+        <img src="1.png" alt="" />
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>My Skills</h2>
+      <h4>Languages</h4>
+      <div class="skills-list-1">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>Python</div>
+        <div>Java</div>
+      </div>
+      <h4>Libraries</h4>
+      <div class="skills-list-2">
+        <div>Numpy</div>
+        <div>Pandas</div>
+        <div>Matplotlib</div>
+        <div>Scikit-learn</div>
+        <div>Node.js</div>
+        <div>React.js</div>
+      </div>
+      <h4>Frameworks</h4>
+      <div class="skills-list-3">
+        <div>Flask</div>
+        <div>React.js</div>
+        <div>Node.js</div>
+        <div>Django</div>
+      </div>
+      <h4>Databases and Tools</h4>
+      <div class="skills-list-4">
+        <div>Excel</div>
+        <div>Statistics</div>
+        <div>Mysql</div>
+        <div>MongoDB</div>
+        <div>Power BI</div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+
+     
+      <div class="project-card" data-title="Portfolio Website" data-image="ss.png" data-description=" You are viewing my personal portfolio built with HTML, CSS, JS. " data-github="https://github.com/Vishalakshi-9/Portfolio" data-live="https://vishalakshi-portfolio.live">
+        Project 1: Portfolio Website
+      </div>
+
+      <div class="project-card" data-title="Weather App" data-description="Weather app using OpenWeather API." data-github="https://github.com/Vishalakshi-9/Weather-app" data-live="https://vishalakshi-weather.live">
+        Project 2: Weather App
+      </div>
+
+      <div class="project-card" data-title="Movie Booking App" data-description="Created a Movie Ticket Booking App using MERN." data-github="https://github.com/Vishalakshi-9/Movie-book" data-live="https://vishalakshi-movie.live">
+        Project 3: Movie Ticket Booking App
+      </div>
+    </section>
+
+    <!-- Modal Section -->
+    <div id="projectModal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h3 id="modalTitle"></h3>
+          <img id="modalImage" src="" alt="Project preview" style="max-width: 100%; margin-top: 10px;" />
+          <p id="modalDescription"></p>
+          <button id="githubBtn">View on GitHub</button>
+          <button id="liveServerBtn">View Live</button>
+        </div>
+      </div>
+      
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+        <p id="formResponse"></p>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Vishalakshi | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Python Developer', 'Data Analyst', 'Web Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
